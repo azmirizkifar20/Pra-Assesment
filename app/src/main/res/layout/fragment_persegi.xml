@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".fragment.PersegiFragment">
+
+            <EditText
+                android:id="@+id/tf_panjang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="20dp"
+                android:ems="10"
+                android:hint="@string/masukkan_panjang_persegi"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/panjang_persegi"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/tf_panjang"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/lebar_persegi"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/tf_lebar"
+                app:layout_constraintTop_toBottomOf="@+id/tf_panjang" />
+
+            <EditText
+                android:id="@+id/tf_lebar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="20dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/masukkan_lebar_persegi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <Button
+                android:id="@+id/btn_hitung"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/hitung"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tf_lebar" />
+
+            <View
+                android:id="@+id/view_hasil"
+                android:layout_width="0.5dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="24dp"
+                android:background="#000000"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_hitung" />
+
+            <TextView
+                android:id="@+id/tv_judul_luas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/luas_persegi"
+                android:textSize="18sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/view_hasil"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view_hasil" />
+
+            <TextView
+                android:id="@+id/tv_judul_keliling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/keliling_persegi"
+                android:textSize="18sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view_hasil"
+                app:layout_constraintTop_toTopOf="@+id/view_hasil" />
+
+            <TextView
+                android:id="@+id/tv_luas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/_0"
+                android:textSize="64sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/view_hasil"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_judul_luas" />
+
+            <TextView
+                android:id="@+id/tv_keliling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/_0"
+                android:textSize="64sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view_hasil"
+                app:layout_constraintTop_toBottomOf="@+id/tv_judul_keliling" />
+
+            <Button
+                android:id="@+id/btn_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/kirim_hasil"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="@+id/view_hasil"
+                app:layout_constraintStart_toStartOf="@+id/view_hasil"
+                app:layout_constraintTop_toBottomOf="@+id/view_hasil" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

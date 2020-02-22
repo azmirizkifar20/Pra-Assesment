@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Pra Assesment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pra_assesment">Pra Assesment</string>
+    <string name="persegi_panjang">persegi panjang</string>
+    <string name="segitiga">segitiga</string>
+    <string name="latihan">Latihan</string>
+    <string name="about_me">About Me</string>
+    <string name="nama">Muhamad Azmi Rizkifar</string>
+    <string name="kelas">D3IF-42-03</string>
+    <string name="nim">6706184055</string>
+    <string name="masukkan_panjang_persegi">Masukkan panjang persegi</string>
+    <string name="panjang_persegi">Panjang persegi</string>
+    <string name="lebar_persegi">Lebar persegi</string>
+    <string name="masukkan_lebar_persegi">Masukkan lebar persegi</string>
+    <string name="hitung">Hitung</string>
+    <string name="keliling_persegi">Keliling persegi</string>
+    <string name="luas_persegi">Luas persegi</string>
+    <string name="_0">0</string>
+    <string name="kirim_hasil">Kirim hasil</string>
+    <string name="masukkan_alas_segitiga">Masukkan alas segitiga</string>
+    <string name="alas_segitiga">Alas Segitiga</string>
+    <string name="tinggi_segitiga">Tinggi segitiga</string>
+    <string name="masukkan_tinggi_segitiga">Masukkan tinggi segitiga</string>
+    <string name="luas_segitiga">Luas segitiga</string>
+    <string name="keliling_segitiga">Keliling segitiga</string>
+</resources>
